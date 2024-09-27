@@ -3,6 +3,7 @@
     "description": "This module is used for adding hreflang seo to website pages.",
     "type": "magento2-module",
     "license": "proprietary",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Bluethink IT Consulting Pvt. Ltd.",
