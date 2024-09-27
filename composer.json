@@ -1,0 +1,22 @@
+{
+    "name": "bluethinkinc/module-seo",
+    "description": "This module is used for adding hreflang seo to website pages.",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Bluethink IT Consulting Pvt. Ltd.",
+            "email": "info@bluethinkinc.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Bluethinkinc\\Seo\\": ""
+        }
+    }
+}

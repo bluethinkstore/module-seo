@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!-- 
+/**
+ * Copyright (c) Bluethink IT Consulting Pvt. Ltd.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="bluethinkinc" translate="label" sortOrder="10">
+            <label>Bluethinkinc</label>
+        </tab>
+        <section id="seo" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <class>separator-top</class>
+            <label>SEO</label>
+            <tab>bluethinkinc</tab>
+            <resource>Bluethinkinc_Seo::config_bluethinkinc_seo</resource>
+            <group id="hreflang_config" type="text" sortOrder="10" showInWebsite="1" showInStore="1" 
+                showInDefault="1" translate="label">
+                <label>Hreflang Configuration</label>
+                <field id="enable" type="select" sortOrder="10" showInWebsite="1" showInStore="1" 
+                    showInDefault="1" translate="label">
+                    <label>Module</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enable_product_page" type="select" sortOrder="20" showInWebsite="1" 
+                    showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable For Product Page</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enable_category_page" type="select" sortOrder="30" showInWebsite="1" 
+                    showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable For Category Page</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enable_cms_page" type="select" sortOrder="40" showInWebsite="1" 
+                    showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable For CMS Page</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enable_x_default" type="select" sortOrder="50" showInWebsite="1" 
+                    showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable X Default</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

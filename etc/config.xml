@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!-- 
+/**
+ * Copyright (c) Bluethink IT Consulting Pvt. Ltd.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <seo>
+            <hreflang_config>
+                <enable>0</enable>
+                <enable_product_page>0</enable_product_page>
+                <enable_categoery_page>0</enable_categoery_page>
+                <enable_cms_page>0</enable_cms_page>
+                <enable_x_default>0</enable_x_default>
+            </hreflang_config>
+        </seo>
+    </default>
+</config>

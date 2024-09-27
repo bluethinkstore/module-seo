@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!-- 
+/**
+ * Copyright (c) Bluethink IT Consulting Pvt. Ltd.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block
+                class="Magento\Framework\View\Element\Template"
+                name="magento.framework.view.element.template"
+                template="Bluethinkinc_Seo::html/header/hreflang-links.phtml"
+                ifconfig="seo/hreflang_config/enable">
+                <arguments>
+                    <argument name="hreflang_data" xsi:type="object">
+                        Bluethinkinc\Seo\ViewModel\Html\Header\HreflangData
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

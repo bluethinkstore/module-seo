@@ -1,0 +1,20 @@
+<?php
+/**
+ * Copyright (c) Bluethink IT Consulting Pvt. Ltd.
+ */
+/**
+ * @var $block Magento\Framework\View\Element\Template
+ * @var $viewModel Bluethinkinc\Seo\ViewModel\Html\Header\HreflangData
+ */
+?>
+<?php
+$viewModel = $block->getHreflangData();
+?>
+<?php if ($viewModel->isEnableXDefault()): ?>
+    <link rel="alternate" hreflang="x-default" href="<?= /* @noEscape */ $viewModel->getBaseUrlWithoutCode() ?>" />
+<?php endif; ?>
+<?php foreach ($viewModel->getLinks() as $link): ?>
+    <?php if (!empty($link['code']) && !empty($link['url'])): ?>
+    <link rel="alternate" hreflang="<?= /* @noEscape */ $link['code'] ?>" href="<?= /* @noEscape */ $link['url'] ?>" />
+    <?php endif; ?>
+<?php endforeach; ?>
